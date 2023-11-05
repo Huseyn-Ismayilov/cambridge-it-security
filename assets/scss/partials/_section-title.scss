@@ -1,19 +1,29 @@
 .sec_title {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    max-width: 596px;
+    margin: 0 auto;
+    .logo {
+        display: inline-block;
+        width: 80px;
+        margin-bottom: 16px;
+    }
     h5 {
         font-size: 14px;
-        color: var(--primary-color);
+        font-weight: 600;
+        color: var(--green);
         text-transform: uppercase;
-        line-height: 1.714;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
     }
-    .btn {
-        color: currentColor;
-        font-style: italic;
+    h1 {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: -0.9px;
+        margin-bottom: 16px;
     }
     p {
-        font-size: 18px;
-        font-weight: 400;
+        opacity: .65;
     }
     .flex {
         display: flex;

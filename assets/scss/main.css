@@ -108,6 +108,7 @@ h1 {
   --blue: #0082ab;
   --orange: #c75e00;
   --orange-light: #f79007;
+  --green: #004F4F;
 }
 
 .btn {
@@ -857,22 +858,32 @@ button.swiper-pagination-bullet {
 }
 
 .sec_title {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+  max-width: 596px;
+  margin: 0 auto;
+}
+.sec_title .logo {
+  display: inline-block;
+  width: 80px;
+  margin-bottom: 16px;
 }
 .sec_title h5 {
   font-size: 14px;
-  color: var(--primary-color);
+  font-weight: 600;
+  color: var(--green);
   text-transform: uppercase;
-  line-height: 1.714;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
-.sec_title .btn {
-  color: currentColor;
-  font-style: italic;
+.sec_title h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.9px;
+  margin-bottom: 16px;
 }
 .sec_title p {
-  font-size: 18px;
-  font-weight: 400;
+  opacity: 0.65;
 }
 .sec_title .flex {
   display: flex;
@@ -986,6 +997,9 @@ button.swiper-pagination-bullet {
 }
 .site_header .guide_btn {
   margin-left: auto;
+}
+.site_header .toggle {
+  color: white;
 }
 
 .mobile_menu {
@@ -1129,6 +1143,14 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 
+.light .site_header {
+  color: white;
+}
+
+.dark .site_header {
+  color: #005252;
+}
+
 @media (min-width: 992px) {
   .mobile_menu {
     display: none;
@@ -1141,6 +1163,9 @@ button.swiper-pagination-bullet {
   .site_header .site_logo {
     margin-right: auto;
     display: block;
+  }
+  .site_header .navbar {
+    display: none;
   }
 }
 .site_footer {
@@ -1366,7 +1391,6 @@ button.swiper-pagination-bullet {
 }
 .hero {
   background-image: url(../images/hero-shape.png);
-  background-color: #FCFEFF;
   background-size: cover;
   background-position: top right;
   margin-top: -150px;
@@ -1454,6 +1478,20 @@ button.swiper-pagination-bullet {
   bottom: -7%;
 }
 
+@media (max-width: 992px) {
+  .hero .col_6 {
+    width: 100%;
+  }
+  .hero .content {
+    text-align: center;
+  }
+  .hero .content .btn_group {
+    display: inline-flex;
+  }
+  .hero .image {
+    margin: 24px auto 0;
+  }
+}
 .brands {
   padding: 40px 0;
 }

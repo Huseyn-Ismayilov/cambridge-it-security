@@ -1,6 +1,7 @@
 .hero {
     background-image: url(../images/hero-shape.png);
-    background-color: #FCFEFF;
+    // background-color: red;
+    // background-color: #FCFEFF;
     background-size: cover;
     background-position: top right;
     margin-top: -150px;
@@ -94,32 +95,19 @@
     }
 }
 
-// @media (max-width: map.get($grid-breakpoints, "lg")) {
-//     .hero {
-//         .left {
-//             width: 100%;
-//             &::after {
-//                 display: none;
-//             }
-//         }
-//         .right {
-//             width: 100%;
-//         }
-//     }
-//     .audio_box {
-//         .progress {
-//             flex-wrap: wrap;
-//         }
-//         #timeslieder {
-//             width: 100%;
-//         }
-//     }
-//     .article_item {
-//         h1 {
-//             font-size: 36px;
-//         }
-//     }
-//     .googleAds {
-//         padding: 30px 0;
-//     }
-// }
+@media (max-width: map.get($grid-breakpoints, "lg")) {
+    .hero {
+        .col_6 {
+            width: 100%;
+        }
+        .content {
+            text-align: center;
+            .btn_group {
+                display: inline-flex;
+            }
+        }
+        .image {
+            margin: 24px auto 0;
+        }
+    }
+}

@@ -29,12 +29,12 @@
             &.active {
                 .arrow {
                     transform: rotate(180deg);
-                }   
+                }
             }
             .arrow {
                 svg {
                     display: block;
-                    transition: .1s;
+                    transition: 0.1s;
                 }
             }
         }
@@ -66,7 +66,7 @@
     top: 0;
     left: 0;
     z-index: 98;
-    transition: .1s;
+    transition: 0.1s;
     padding: 10px 0;
     &.scroll_down {
         background-color: var(--base-color);
@@ -96,6 +96,9 @@
     }
     .guide_btn {
         margin-left: auto;
+    }
+    .toggle {
+        color: white;
     }
 }
 
@@ -256,6 +259,16 @@
     }
 }
 
+.light {
+    .site_header {
+        color: white;
+    }
+}
+.dark {
+    .site_header {
+        color: #005252;
+    }
+}
 @media (min-width: map.get($grid-breakpoints, "lg")) {
     .mobile_menu {
         display: none;
@@ -271,6 +284,9 @@
         .site_logo {
             margin-right: auto;
             display: block;
+        }
+        .navbar {
+            display: none;
         }
     }
 }
