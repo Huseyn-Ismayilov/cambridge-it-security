@@ -17,3 +17,11 @@
         }
     }
 }
+@media (max-width:768px) {
+    .brands {
+        overflow: hidden;
+        .wrapper {
+            margin: 0 -16px;
+        }
+    }
+}

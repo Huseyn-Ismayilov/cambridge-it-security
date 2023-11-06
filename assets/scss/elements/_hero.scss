@@ -19,9 +19,9 @@
     &::after {
         content: "";
         position: absolute;
-        left: 10%;
-        top: -5%;
-        background-image: url("../images/shape1.svg");
+        left: 15%;
+        top: 0;
+        background-image: url("../images/shape1.png");
         background-size: contain;
         aspect-ratio: 36/51;
         transform: rotate(-27.134deg);
@@ -106,7 +106,8 @@
     .hero {
         background-image: url(../images/hero-shape-mobile.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-position: top center;
+        padding-bottom: 80px;
         &::after {
             width: 242px;
             top: 4%;

@@ -1,0 +1,82 @@
+.ourServices {
+    padding-bottom: 200px;
+    background-image: url(../images/services-bg.png);
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    .sec_title {
+        margin-bottom: 100px;
+    }
+    .wrapper {
+        margin: 0 -12px;
+        .col_7 {
+            width: 55%;
+        }
+        .col_3 {
+            width: 45%;
+        }
+        .col {
+            padding: 0 12px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .item {
+        padding: 36px 32px;
+        border-radius: 16px;
+        border: 1px solid #ebebeb;
+        background: #fff;
+        height: 100%;
+        box-shadow:
+            0px 19px 42px 0px rgba(184, 184, 184, 0.1),
+            0px 76px 76px 0px rgba(184, 184, 184, 0.09),
+            0px 171px 102px 0px rgba(184, 184, 184, 0.05),
+            0px 304px 121px 0px rgba(184, 184, 184, 0.01),
+            0px 474px 133px 0px rgba(184, 184, 184, 0);
+        p {
+            font-size: 14px;
+            opacity: 0.65;
+        }
+        > div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .icon {
+            width: 54px;
+            height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 11px;
+            margin-right: 16px;
+            box-shadow:
+                0px 2px 4px 0px rgba(79, 79, 79, 0.1),
+                0px 7px 7px 0px rgba(79, 79, 79, 0.09),
+                0px 15px 9px 0px rgba(79, 79, 79, 0.05),
+                0px 27px 11px 0px rgba(79, 79, 79, 0.01),
+                0px 42px 12px 0px rgba(79, 79, 79, 0);
+            img {
+                width: 24px;
+                height: auto;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .ourServices {
+        .wrapper {
+            .col {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .ourServices {
+        background-size: 350%;
+        .item {
+            padding: 24px;
+        }
+    }
+}
