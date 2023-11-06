@@ -280,13 +280,28 @@
     }
 }
 @media (max-width: map.get($grid-breakpoints, "lg")) {
+    .top_header {
+        display: none;
+    }
     .site_header {
+        padding: 20px 0;
         .site_logo {
-            margin-right: auto;
             display: block;
+            width: 162px;
         }
         .navbar {
             display: none;
+        }
+        .guide_btn {
+            display: none;
+        }
+        .toggle{
+            position: absolute;
+            left: 0;
+        }
+        .wrapper {
+            justify-content: center;
+            position: relative;
         }
     }
 }

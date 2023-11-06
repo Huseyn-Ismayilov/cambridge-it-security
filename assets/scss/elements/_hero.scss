@@ -7,6 +7,8 @@
     margin-top: -150px;
     padding-top: calc(150px + 60px);
     padding-bottom: 100px;
+    overflow: hidden;
+    position: relative;
     .container {
         position: relative;
         z-index: 2;
@@ -15,10 +17,15 @@
         align-items: center;
     }
     &::after {
-        content: url(../images/shape1.svg);
+        content: "";
         position: absolute;
-        left: 0;
-        top: 0;
+        left: 10%;
+        top: -5%;
+        background-image: url("../images/shape1.svg");
+        background-size: contain;
+        aspect-ratio: 36/51;
+        transform: rotate(-27.134deg);
+        width: 360px;
     }
     .col_6 {
         width: 50%;
@@ -97,6 +104,16 @@
 
 @media (max-width: map.get($grid-breakpoints, "lg")) {
     .hero {
+        background-image: url(../images/hero-shape-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        &::after {
+            width: 242px;
+            top: 4%;
+            left: -19%;
+            transform: rotate(-30deg);
+            background-image: url("../images/shape1-mobile.png");
+        }
         .col_6 {
             width: 100%;
         }
@@ -105,9 +122,21 @@
             .btn_group {
                 display: inline-flex;
             }
+            h1 {
+                font-size: 24px;
+            }
         }
         .image {
             margin: 24px auto 0;
+        }
+    }
+}
+@media (max-width: map.get($grid-breakpoints, "md")) {
+    .hero{
+        .content {
+            .btn_group {
+                flex-direction: column;
+            }
         }
     }
 }
