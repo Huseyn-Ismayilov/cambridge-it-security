@@ -52,6 +52,8 @@
             border-radius: 32px;
             padding: 16px;
             background: #fff;
+            transition: .1s cubic-bezier(0.165, 0.84, 0.44, 1);
+            cursor: pointer;
             .image {
                 margin-bottom: 18px;
                 img {
@@ -80,6 +82,9 @@
                     line-height: 1.5;
                     opacity: 0.65;
                 }
+            }
+            &:hover {
+                transform: scale(1.05);
             }
         }
     }

@@ -2007,6 +2007,8 @@ button.swiper-pagination-bullet {
   border-radius: 32px;
   padding: 16px;
   background: #fff;
+  transition: 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
 }
 .workWithUs .items_list .item .image {
   margin-bottom: 18px;
@@ -2032,6 +2034,9 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   line-height: 1.5;
   opacity: 0.65;
+}
+.workWithUs .items_list .item:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 991px) {
