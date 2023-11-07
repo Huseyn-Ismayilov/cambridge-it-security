@@ -1195,9 +1195,101 @@ button.swiper-pagination-bullet {
   }
 }
 .site_footer {
-  background-color: var(--navy-02);
+  background-color: var(--green);
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.54);
+}
+.site_footer .wrapper {
+  justify-content: space-between;
+}
+.site_footer .foot_main {
+  padding: 67px 0 53px;
+}
+.site_footer .foot_main .col.first {
+  width: 30%;
+}
+.site_footer .foot_main .col.last {
+  width: 63%;
+}
+.site_footer a:hover {
   color: white;
-  padding: 100px 0;
+}
+.site_footer .foot_bottom .wrapper {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  align-items: center;
+}
+.site_footer h5 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.88px;
+  text-transform: uppercase;
+  color: white;
+}
+.site_footer .brand {
+  margin-bottom: 34px;
+}
+.site_footer .brand img {
+  margin-bottom: 12px;
+}
+.site_footer .brand p {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.site_footer .socialMedia {
+  display: inline-flex;
+  align-items: center;
+}
+.site_footer .socialMedia a {
+  display: block;
+  padding: 8px;
+}
+.site_footer .socialMedia a svg {
+  display: block;
+}
+.site_footer .menu h5 {
+  margin-bottom: 12px;
+}
+.site_footer .menu ul a {
+  display: block;
+  padding: 6px 0;
+}
+.site_footer .menuItems {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.site_footer .contactInfo {
+  max-width: 257px;
+}
+.site_footer .contactInfo > * {
+  display: block;
+  text-transform: capitalize;
+}
+.site_footer .contactInfo > *:not(h5) {
+  padding: 6px 0;
+}
+.site_footer .contactInfo h5 {
+  margin-bottom: 16px;
+}
+.site_footer .bottomMenu {
+  display: flex;
+  align-items: center;
+}
+.site_footer .bottomMenu a {
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+  padding: 10px 16px;
+  text-transform: capitalize;
+}
+.site_footer .copyright {
+  padding: 32px 0;
+}
+.site_footer .copyright p {
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 @media (max-width: 992px) {
@@ -1935,6 +2027,7 @@ button.swiper-pagination-bullet {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 40%;
+  margin-bottom: 123px;
 }
 .ourDifference .container {
   display: flex;
@@ -1998,6 +2091,9 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 992px) {
+  .ourDifference {
+    margin-bottom: 96px;
+  }
   .ourDifference .sec_title {
     text-align: center;
     padding-bottom: 24px;
@@ -2010,6 +2106,10 @@ button.swiper-pagination-bullet {
 @media (max-width: 768px) {
   .ourDifference .items {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .ourDifference .wrapper {
+    padding: 32px 0 13px;
   }
   .ourDifference .image {
     margin-bottom: -200px;

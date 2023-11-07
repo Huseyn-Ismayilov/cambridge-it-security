@@ -1,8 +1,111 @@
 .site_footer {
-    background-color: var(--navy-02);
-    color: white;
-    padding: 100px 0;
-
+    background-color: var(--green);
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.54);
+    .wrapper {
+        justify-content: space-between;
+    }
+    .foot_main {
+        padding: 67px 0 53px;
+        .col {
+            &.first {
+                width: 30%;
+            }
+            &.last {
+                width: 63%;
+            }
+        }
+    }
+    a {
+        &:hover {
+            color: white;
+        }
+    }
+    .foot_bottom {
+        .wrapper {
+            border-top: 1px solid rgba(255, 255, 255, 0.14);
+            align-items: center;
+        }
+    }
+    h5 {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.88px;
+        text-transform: uppercase;
+        color: white;
+    }
+    .brand {
+        margin-bottom: 34px;
+        img {
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    .socialMedia {
+        display: inline-flex;
+        align-items: center;
+        a {
+            display: block;
+            padding: 8px;
+            svg {
+                display: block;
+            }
+        }
+    }
+    .menu {
+        h5 {
+            margin-bottom: 12px;
+        }
+        ul {
+            a {
+                display: block;
+                padding: 6px 0;
+            }
+        }
+    }
+    .menuItems {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+    .contactInfo {
+        max-width: 257px;
+        > * {
+            display: block;
+            text-transform: capitalize;
+        }
+        > * {
+            &:not(h5) {
+                padding: 6px 0;
+            }
+        }
+        h5 {
+            margin-bottom: 16px;
+        }
+    }
+    .bottomMenu {
+        display: flex;
+        align-items: center;
+        a {
+            font-size: 12px;
+            font-weight: 400;
+            display: block;
+            padding: 10px 16px;
+            text-transform: capitalize;
+        }
+    }
+    .copyright {
+        padding: 32px 0;
+        p {
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+    }
 }
 @media (max-width: map.get($grid-breakpoints, "lg")) {
     .site_footer {

@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 40%;
+    margin-bottom: 123px;
     .container {
         display: flex;
         flex-direction: column;
@@ -73,6 +74,7 @@
 }
 @media (max-width: map.get($grid-breakpoints, "lg")) {
     .ourDifference{
+        margin-bottom: 96px;
         .sec_title {
             text-align: center;
             padding-bottom: 24px;
@@ -87,6 +89,10 @@
     .ourDifference{
         .items {
             grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        .wrapper {
+            padding: 32px 0 13px;
         }
         .image {
             margin-bottom: -200px;
