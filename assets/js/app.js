@@ -77,3 +77,9 @@ function rangeSlider_error(id) {
 		return true;
 	}
 }
+
+
+$('.accardion_item .head').click(function (e) {
+	$(this).parent().toggleClass('opened');
+	$(this).next().slideToggle()
+});

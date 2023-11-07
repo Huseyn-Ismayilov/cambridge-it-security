@@ -1,0 +1,99 @@
+.ourDifference {
+    background-color: var(--green);
+    color: white;
+    background-image: url(../images/shape2.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 40%;
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper {
+        padding: 90px 0 70px;
+        .col_6 {
+            width: 55%;
+        }
+        .col_5 {
+            width: 45%;
+        }
+    }
+    .sec_title {
+        text-align: left;
+        max-width: 100%;
+        padding-right: 40px;
+        h5 {
+            color: var(--orange-light);
+        }
+    }
+    .items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 21px 25px;
+        li {
+            padding: 16px;
+            border-radius: 16px;
+            background-color: white;
+            color: var(--blue);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            h3 {
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: -0.4px;
+            }
+            .icon {
+                width: 54px;
+                height: 54px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 11px;
+                background: #fff;
+                box-shadow:
+                    0px 2px 4px 0px rgba(79, 79, 79, 0.1),
+                    0px 7px 7px 0px rgba(79, 79, 79, 0.09),
+                    0px 15px 9px 0px rgba(79, 79, 79, 0.05),
+                    0px 27px 11px 0px rgba(79, 79, 79, 0.01),
+                    0px 42px 12px 0px rgba(79, 79, 79, 0);
+            }
+        }
+    }
+    .image {
+        margin-bottom: -93px;
+
+        img {
+            width: 100%;
+            aspect-ratio: 120/36;
+            object-fit: cover;
+            border-radius: 26px;
+        }
+    }
+}
+@media (max-width: map.get($grid-breakpoints, "lg")) {
+    .ourDifference{
+        .sec_title {
+            text-align: center;
+            padding-bottom: 24px;
+            padding-right: 0;
+        }
+        .col {
+            width: 100% !important; 
+        }
+    }
+}
+@media (max-width: map.get($grid-breakpoints, "md")) {
+    .ourDifference{
+        .items {
+            grid-template-columns: 1fr;
+        }
+        .image {
+            margin-bottom: -200px;
+            img {
+                aspect-ratio: 1/1;
+                border-radius: 16px;
+            }
+        }
+    }
+}

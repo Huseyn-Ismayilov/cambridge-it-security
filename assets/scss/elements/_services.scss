@@ -63,7 +63,7 @@
         }
     }
 }
-@media (max-width: 991px) {
+@media (max-width: map.get($grid-breakpoints, "lg")) {
     .ourServices {
         .wrapper {
             .col {
@@ -72,7 +72,7 @@
         }
     }
 }
-@media (max-width: 768px) {
+@media (max-width: map.get($grid-breakpoints, "md")) {
     .ourServices {
         background-size: 350%;
         .item {
