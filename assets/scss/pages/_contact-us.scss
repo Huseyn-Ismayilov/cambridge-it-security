@@ -1,0 +1,25 @@
+.getInTouch {
+    .col {
+        width: 50%;
+    }
+    .sec_title {
+        text-align: left;
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+        }
+        p {
+            line-height: 2;
+        }
+    }
+    .wrapper {
+        align-items: center;
+    }
+}
+@media (max-width:map.get($grid-breakpoints, "lg")) {
+    .getInTouch {
+        .col {
+            width: 100%;
+        }
+    }
+}

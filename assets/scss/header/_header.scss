@@ -19,9 +19,11 @@
     }
     .select_language {
         position: relative;
+        color: currentColor;
         .btn {
             gap: 10px;
             cursor: pointer;
+            color: currentColor;
             span {
                 font-size: 12px;
                 font-weight: 600;
@@ -78,6 +80,7 @@
     .site_logo {
         display: block;
         width: 180px;
+        transition: 0s;
     }
     .navbar {
         display: flex;
@@ -91,7 +94,6 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            color: white;
             svg {
                 display: block;
             }
@@ -266,10 +268,29 @@
 .light {
     .site_header {
         color: white;
+        .site_logo {
+            filter: brightness(0) saturate(100%) invert(26%) sepia(19%) saturate(3004%) hue-rotate(140deg) brightness(88%) contrast(101%);
+        }
+    }
+    .top_header {
+        color: white;
     }
 }
 .dark {
     .site_header {
+        color: #005252;
+        .site_logo {
+          filter: brightness(0) saturate(100%) invert(24%) sepia(27%) saturate(1552%) hue-rotate(133deg) brightness(96%) contrast(101%);
+
+        }
+        &.scroll_down{
+            color: white;
+            .site_logo {
+                filter: brightness(0) saturate(100%) invert(93%) sepia(0%) saturate(7500%) hue-rotate(118deg) brightness(107%) contrast(110%);
+            }
+        }
+    }
+    .top_header {
         color: #005252;
     }
 }
@@ -299,7 +320,7 @@
         .guide_btn {
             display: none;
         }
-        .toggle{
+        .toggle {
             position: absolute;
             left: 0;
         }

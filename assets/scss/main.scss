@@ -2,19 +2,16 @@
 @import "./base/base";
 @import "./base/fonts";
 @import "./containers";
+// Variables
 @import "./variables/colors";
 @import "./variables/dimensions";
 @import "./buttons/primary-btn";
 @import "./carousel/swiper-bundle.min";
 @import "./partials/toggle";
 @import "./partials/section-title";
-// @import "./variables/fonts";
+// Layout
 @import "./header/header";
 @import "./footer/footer";
-@import "./elements/hero";
-@import "./elements/brands";
-@import "./elements/services";
-@import "./elements/getInTouch";
-@import "./elements/workWithUs";
-@import "./elements/FAQs";
-@import "./elements/ourDifference";
+// Pages
+@import "./pages/home";
+@import "./pages/contact-us";
