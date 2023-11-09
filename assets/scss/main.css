@@ -842,7 +842,7 @@ button.swiper-pagination-bullet {
 .toggle .bar::before {
   content: "";
   width: 100%;
-  height: 2.2px;
+  height: 3px;
   background-color: currentColor;
   border-radius: 5px;
   display: block;
@@ -2537,6 +2537,9 @@ button.swiper-pagination-bullet {
   .sub_page_hero .col:first-child {
     margin-bottom: 42px;
   }
+  .sub_page_hero .content {
+    text-align: center;
+  }
 }
 .upcoming_events {
   padding: 72px 0 120px;
@@ -2546,4 +2549,38 @@ button.swiper-pagination-bullet {
 }
 .upcoming_events .event_item:not(:last-child) {
   border-bottom: 1px solid #E2E2E2;
+}
+.upcoming_events .event_item .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.upcoming_events .event_item h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--blue);
+}
+.upcoming_events .event_item .date {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--grey-light);
+}
+.upcoming_events .event_item .title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.upcoming_events .event_item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.65;
+  margin-bottom: 40px;
+}
+.upcoming_events .event_item .location {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--grey-light);
 }/*# sourceMappingURL=main.css.map */
