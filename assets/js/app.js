@@ -10,10 +10,10 @@ $(window).scroll(function () {
 
 
 
-$('.site_header .toggle, .mobile_menu .close_btn').click(function () {
+$('.toggle').click(function () {
 	$('.mobile_menu').toggleClass('opened');
 	$('.nav_menu').toggleClass('opened');
-	$('.site_header .toggle').toggleClass('opened')
+	$('.toggle').toggleClass('opened')
 });
 
 $('.mobile_menu .menu .dropdown .nav_link').click(function (e) {
@@ -79,7 +79,14 @@ function rangeSlider_error(id) {
 }
 
 
-$('.accardion_item .head').click(function (e) {
+$('.accardion_item .head').click(function () {
 	$(this).parent().toggleClass('opened');
 	$(this).next().slideToggle()
+});
+
+$('.mobile_menu .main_menu li > a').click(function () {
+	$(this).toggleClass('opened')
+	$(this).parent().toggleClass('active');;
+	$(this).next().slideToggle()
+	return false
 });

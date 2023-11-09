@@ -1,5 +1,5 @@
 @use "sass:map";
-@import "./base/base";
+@import "./base/reset";
 @import "./base/fonts";
 @import "./containers";
 // Variables
@@ -10,8 +10,9 @@
 @import "./partials/toggle";
 @import "./partials/section-title";
 // Layout
-@import "./header/header";
-@import "./footer/footer";
+@import "./layout/header";
+@import "./layout/footer";
 // Pages
 @import "./pages/home";
 @import "./pages/contact-us";
+@import "./pages/events";
