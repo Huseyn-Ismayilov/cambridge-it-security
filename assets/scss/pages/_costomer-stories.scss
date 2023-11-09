@@ -1,0 +1,141 @@
+.customer_stories {
+    padding: 126px 0 60px;
+    .intro {
+        .col_6 {
+            width: 60%;
+        }
+        .col_4 {
+            width: 40%;
+        }
+        .wrapper {
+            align-items: center;
+        }
+        .content {
+            .sec_title {
+                text-align: left;
+                max-width: 100%;
+                h1 {
+                    font-weight: 700;
+                }
+            }
+            .items_list {
+                margin-top: 32px;
+                .item {
+                    width: 100%;
+                    max-width: 548px;
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    box-shadow:
+                        0px 19px 42px 0px rgba(184, 184, 184, 0.1),
+                        0px 76px 76px 0px rgba(184, 184, 184, 0.09),
+                        0px 171px 102px 0px rgba(184, 184, 184, 0.05),
+                        0px 304px 121px 0px rgba(184, 184, 184, 0.01),
+                        0px 474px 133px 0px rgba(184, 184, 184, 0);
+                    border: 1px solid #ebebeb;
+                    background-color: white;
+                    padding: 16px;
+                    border-radius: 16px;
+                    margin-bottom: 16px;
+                    .icon {
+                        width: 40px;
+                        height: 40px;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 8.148px;
+                        box-shadow:
+                            0px 1.48148px 2.96296px 0px rgba(79, 79, 79, 0.1),
+                            0px 5.18518px 5.18518px 0px rgba(79, 79, 79, 0.09),
+                            0px 11.11111px 6.66667px 0px rgba(79, 79, 79, 0.05),
+                            0px 20px 8.14815px 0px rgba(79, 79, 79, 0.01),
+                            0px 31.11111px 8.88889px 0px rgba(79, 79, 79, 0);
+                    }
+                    p {
+                        font-size: 16px;
+                        opacity: 0.65;
+                    }
+                }
+            }
+        }
+        .image {
+            img {
+                border-radius: 22px;
+                box-shadow:
+                    0px 12.27863px 27.39079px 0px rgba(105, 105, 105, 0.1),
+                    0px 50.05903px 50.05903px 0px rgba(105, 105, 105, 0.09),
+                    0px 113.3412px 68.00471px 0px rgba(105, 105, 105, 0.05),
+                    0px 202.12514px 81.22786px 0px rgba(105, 105, 105, 0.01),
+                    0px 315.46634px 88.78394px 0px rgba(105, 105, 105, 0);
+            }
+        }
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        opacity: 0.65;
+    }
+    .info_block {
+        padding: 64px 0;
+        .wrapper {
+            align-items: center;
+        }
+        .col_3 {
+            width: 30%;
+        }
+        .col_7 {
+            width: 70%;
+        }
+    }
+    .content_block {
+        h3 {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--green);
+            margin-bottom: 16px;
+        }
+        .line {
+            margin: 32px 0;
+            width: 100%;
+            display: block;
+            height: 1px;
+            background-color: #e6e6e6;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .customer_stories {
+        padding: 64px 0;
+        .intro {
+            .content {
+                .sec_title {
+                    text-align: center;
+                    h1 {
+                        font-size: 24px;
+                    }
+                }
+                .items_list {
+                    margin-bottom: 28px;
+                    .item {
+                        margin: 0 auto;
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+        .col {
+            width: 100% !important;
+        }
+        p {
+            font-size: 14px;
+        }
+        .info_block {
+            padding: 64px 0 32px;
+            .logo {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
