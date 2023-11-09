@@ -90,3 +90,24 @@ $('.mobile_menu .main_menu li > a').click(function () {
 	$(this).next().slideToggle()
 	return false
 });
+
+
+
+var swiper = new Swiper(".workWithUs .slider", {
+	slidesPerView: "auto",
+	spaceBetween: 30,
+});
+
+
+var swiper = new Swiper(".content_slider .slider", {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	pagination: {
+		el: ".content_slider .swiper-pagination",
+		clickable: true,
+	},
+	navigation: {
+		nextEl: ".content_slider .next_arrow ",
+		prevEl: ".content_slider .prev_arrow",
+	},
+});
