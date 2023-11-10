@@ -111,3 +111,14 @@ var swiper = new Swiper(".content_slider .slider", {
 		prevEl: ".content_slider .prev_arrow",
 	},
 });
+
+
+
+var swiper = new Swiper(".service_details .image_slider", {
+	slidesPerView: 1,
+	spaceBetween: 22,
+	pagination: {
+		el: ".service_details .swiper-pagination",
+		clickable: true,
+	},
+});
