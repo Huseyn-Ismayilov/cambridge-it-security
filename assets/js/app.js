@@ -122,3 +122,20 @@ var swiper = new Swiper(".service_details .image_slider", {
 		clickable: true,
 	},
 });
+
+
+range = $('.range_slider .input-range');
+value = $('.range_slider .range-value');
+
+value.val(range.attr('value'));
+
+range.on('input', function () {
+	monparent = this.parentNode;
+	value = $(monparent).parent().find('.range-value');
+	$(value).val(this.value);
+});
+
+value.on('input', function () {
+	range = $(monparent).find('.input-range');
+	$(range).val(this.value);
+});
